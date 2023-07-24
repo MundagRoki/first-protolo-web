@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Personal Portfolia Website</title>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Portfolia</a></li>
+            <li><a href="">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <p>UI/UX Designer</p>
+          <h1>Hi, I'm <span>Kevin</span> <br />Jen From Australia</h1>
+        </div>
+      </div>
+    </div>
+    <!-------- About -------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" alt="user" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Apple Inc. is an American multinational technology company
+              headquartered in Cupertino, California. Apple is the world's
+              largest technology company by revenue, with US$394.3 billion in
+              2022 revenue. As of March 2023, Apple is the world's biggest
+              company by market capitalization.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI?UX</span><br />Designing We/App interfaces</li>
+                <li>
+                  <span>Web Development</span><br />Designing We/App interfaces
+                </li>
+                <li>
+                  <span>Mobile Development</span><br />Designing Web/App
+                  interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li>
+                  <span>2021 - Current</span><br />UI/UX Designer Training at ET
+                  institute
+                </li>
+                <li><span>2019 - 2021</span><br />Team Lead StartApp LLC</li>
+                <li>
+                  <span>2017 - 2019</span><br />UI/UX Designer Executive at Coin
+                  Digital LLC
+                </li>
+                <li>
+                  <span>2016 - 2017</span><br />Designing We/App interfaces
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2016</span><br />Designing We/App interfaces</li>
+                <li><span>2016</span><br />Designing We/App interfaces</li>
+                <li><span>2014</span><br />Designing We/App interfaces</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(event, tabname) {
+        for (var i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active-link");
+        }
+        for (var i = 0; i < tabcontents.length; i++) {
+          tabcontents[i].classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+
+      // Add event listeners to each tab link
+      for (var i = 0; i < tablinks.length; i++) {
+        tablinks[i].addEventListener("click", function (event) {
+          opentab(event, this.getAttribute("data-tab"));
+        });
+      }
+    </script>
+  </body>
+</html>
