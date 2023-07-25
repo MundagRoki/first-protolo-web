@@ -48,13 +48,27 @@
               company by market capitalization.
             </p>
             <div class="tab-titles">
-              <p class="tab-links active-link" onclick="opentab('skills')">
+              <p
+                class="tab-links active-link"
+                data-tab="skills"
+                onclick="opentab('skills')"
+              >
                 Skills
               </p>
-              <p class="tab-links" onclick="opentab('experience')">
+              <p
+                class="tab-links"
+                data-tab="experience"
+                onclick="opentab('experience')"
+              >
                 Experience
               </p>
-              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p
+                class="tab-links"
+                data-tab="education"
+                onclick="opentab('education')"
+              >
+                Education
+              </p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
@@ -95,27 +109,6 @@
         </div>
       </div>
     </div>
-    <script>
-      var tablinks = document.getElementsByClassName("tab-links");
-      var tabcontents = document.getElementsByClassName("tab-contents");
-
-      function opentab(event, tabname) {
-        for (var i = 0; i < tablinks.length; i++) {
-          tablinks[i].classList.remove("active-link");
-        }
-        for (var i = 0; i < tabcontents.length; i++) {
-          tabcontents[i].classList.remove("active-tab");
-        }
-        event.currentTarget.classList.add("active-link");
-        document.getElementById(tabname).classList.add("active-tab");
-      }
-
-      // Add event listeners to each tab link
-      for (var i = 0; i < tablinks.length; i++) {
-        tablinks[i].addEventListener("click", function (event) {
-          opentab(event, this.getAttribute("data-tab"));
-        });
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
