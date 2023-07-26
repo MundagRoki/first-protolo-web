@@ -13,7 +13,6 @@ function opentab(event, tabname) {
   document.getElementById(tabname).classList.add("active-tab");
 }
 
-// Add event listeners to each tab link
 for (var i = 0; i < tablinks.length; i++) {
   tablinks[i].addEventListener("click", function (event) {
     opentab(event, this.getAttribute("data-tab"));

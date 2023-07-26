@@ -5,12 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <title>Personal Portfolia Website</title>
+    <script src="https://kit.fontawesome.com/9522e91f60.js" crossorigin="anonymous"></script>
   </head>
   <body>
     <div id="header">
@@ -18,11 +16,11 @@
         <nav>
           <img src="images/logo.png" class="logo" />
           <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">Portfolia</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolia</a></li>
+            <li><a href="#contact">Contact</a></li>
           </ul>
         </nav>
         <div class="header-text">
@@ -40,62 +38,25 @@
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
-            <p>
-              Apple Inc. is an American multinational technology company
-              headquartered in Cupertino, California. Apple is the world's
-              largest technology company by revenue, with US$394.3 billion in
-              2022 revenue. As of March 2023, Apple is the world's biggest
-              company by market capitalization.
-            </p>
+            <p> Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the world's largest technology company by revenue, with US$394.3 billion in 2022 revenue. As of March 2023, Apple is the world's biggest company by market capitalization. </p>
             <div class="tab-titles">
-              <p
-                class="tab-links active-link"
-                data-tab="skills"
-                onclick="opentab('skills')"
-              >
-                Skills
-              </p>
-              <p
-                class="tab-links"
-                data-tab="experience"
-                onclick="opentab('experience')"
-              >
-                Experience
-              </p>
-              <p
-                class="tab-links"
-                data-tab="education"
-                onclick="opentab('education')"
-              >
-                Education
-              </p>
+              <p class="tab-links active-link" data-tab="skills" onclick="opentab('skills')"> Skills </p>
+              <p class="tab-links" data-tab="experience" onclick="opentab('experience')"> Experience </p>
+              <p class="tab-links" data-tab="education" onclick="opentab('education')"> Education </p>
             </div>
             <div class="tab-contents active-tab" id="skills">
               <ul>
                 <li><span>UI?UX</span><br />Designing We/App interfaces</li>
-                <li>
-                  <span>Web Development</span><br />Designing We/App interfaces
-                </li>
-                <li>
-                  <span>Mobile Development</span><br />Designing Web/App
-                  interfaces
-                </li>
+                <li> <span>Web Development</span><br />Designing We/App interfaces </li>
+                <li> <span>Mobile Development</span><br />Designing Web/App interfaces </li>
               </ul>
             </div>
             <div class="tab-contents" id="experience">
               <ul>
-                <li>
-                  <span>2021 - Current</span><br />UI/UX Designer Training at ET
-                  institute
-                </li>
-                <li><span>2019 - 2021</span><br />Team Lead StartApp LLC</li>
-                <li>
-                  <span>2017 - 2019</span><br />UI/UX Designer Executive at Coin
-                  Digital LLC
-                </li>
-                <li>
-                  <span>2016 - 2017</span><br />Designing We/App interfaces
-                </li>
+                <li> <span>2021 - Current</span><br />UI/UX Designer Training at ET institute </li>
+                <li> <span>2019 - 2021</span><br />Team Lead StartApp LLC</li>
+                <li> <span>2017 - 2019</span><br />UI/UX Designer Executive at Coin Digital LLC </li>
+                <li> <span>2016 - 2017</span><br />Designing We/App interfaces </li>
               </ul>
             </div>
             <div class="tab-contents" id="education">
@@ -108,6 +69,93 @@
           </div>
         </div>
       </div>
+    </div>
+    <!-- services -->
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p> Apple Inc. is an American multinational technology company headquartered in Cupertino.</p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p> Apple Inc. is an American multinational technology company headquartered in Cupertino.</p>
+            <a href="">Learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p> Apple Inc. is an American multinational technology company headquartered in Cupertino.</p>
+            <a href="">Learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- portfolio -->
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" alt="work1" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p> Apple Inc. is an American multinational technology company headquartered in Cupertino.</p>
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-2.png" alt="work1" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p> Apple Inc. is an American multinational technology company headquartered in Cupertino.</p>
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/work-3.png" alt="work1" />
+            <div class="layer">
+              <h3>Online Shopping App</h3>
+              <p> Apple Inc. is an American multinational technology company headquartered in Cupertino.</p>
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+    <!-- contact -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p><i class="fa-solid fa-paper-plane"></i>contact@example.com</p>
+            <p><i class="fa-solid fa-phone"></i>0123456789</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-square-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="images/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contact-right">
+            <form>
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input type="email" name="Email" placeholder="Your Email" required />
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright"> Copyright MundagRoki. Made with by <i class="fa-solid fa-heart"></i> MundagRoki </div>
     </div>
     <script src="script.js"></script>
   </body>
